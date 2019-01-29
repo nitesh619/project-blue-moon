@@ -13,15 +13,19 @@ export class RecipeService {
     private recipes: Recipe[] = [
         new Recipe('A Test Recipe', 
         'This is simply a test',
-        'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg',
+        'http://www.stickpng.com/assets/images/58824b33e81acb96424ffab9.png',
         [new Ingredient('Bread', 2), new Ingredient('Onion', 9)]),
         new Recipe('Another Recipe', 'This is simply a test',
-        'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg',
+        'https://www.pngarts.com/files/3/Pizza-PNG-Image.png',
         [new Ingredient('Pasta', 4), new Ingredient('Potato', 12)])
     ];
     
     getRecipes(): Recipe[] {
         return this.recipes.slice()
+    }
+
+    getRecipeById(index: number): Recipe {
+       return this.recipes[index];
     }
     
     addIngredientsToShopping(ingredients: Ingredient[]) {
