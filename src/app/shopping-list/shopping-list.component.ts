@@ -20,4 +20,8 @@ export class ShoppingListComponent implements OnInit {
     );
   }
 
+  onEditItem(index: number) {
+    this.shopListService.editingIngridient.next(index);
+  }
+
 }

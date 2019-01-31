@@ -11,11 +11,11 @@ export class RecipeService {
     constructor(private shopListService: ShoppingService) {}
     
     private recipes: Recipe[] = [
-        new Recipe('A Test Recipe', 
-        'This is simply a test',
+        new Recipe('Perfect Pizza', 
+        'A very simple circular pizza.',
         'http://www.stickpng.com/assets/images/58824b33e81acb96424ffab9.png',
         [new Ingredient('Bread', 2), new Ingredient('Onion', 9)]),
-        new Recipe('Another Recipe', 'This is simply a test',
+        new Recipe('The Big Burger', 'A stack of fat and carbs.',
         'https://www.pngarts.com/files/3/Pizza-PNG-Image.png',
         [new Ingredient('Pasta', 4), new Ingredient('Potato', 12)])
     ];
